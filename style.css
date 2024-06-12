@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Sahitya:wght@400;700&display=swap');
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 1000px;
+  background-image: url("tiamo.png");
+  background-position: center center;
+}
+.paper {
+  background-image: url("cartas.jpg");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+  cursor: pointer;
+}
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+.paper .title{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.paper .adjetivos{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.paper .link-adjetivos{
+  font-size: 50px;
+  font-weight: 600;
+  outline: none;
+  color: black;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  background-size: 110px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.paper.red {
+/*   filter: hue-rotate(90deg); */
+}
+.paper:nth-of-type(3n) {
+  background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
+}
+p {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  opacity: 0.75;
+  user-select: none;
+  
+}
